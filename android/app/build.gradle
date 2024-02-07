@@ -76,7 +76,7 @@ android {
 
     namespace "com.myapp"
     defaultConfig {
-        applicationId "com.myapp"
+        applicationId "com.khoinh1.word_search"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

@@ -1,6 +1,6 @@
+import {icons} from './icons';
+import {levels} from './levels';
 export const images = {
-  avt: require('../images/source/avt.jpg'),
-  banner: require('../images/source/Banner.png'),
+  icons,
+  levels,
 };
-
-export type ImageTypes = keyof typeof images;

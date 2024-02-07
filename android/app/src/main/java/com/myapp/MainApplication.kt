@@ -11,7 +11,7 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.flipper.ReactNativeFlipper
 import com.facebook.soloader.SoLoader
-
+import org.wonday.orientation.OrientationActivityLifecycle;
 class MainApplication : Application(), ReactApplication {
 
   override val reactNativeHost: ReactNativeHost =
@@ -41,5 +41,6 @@ class MainApplication : Application(), ReactApplication {
       load()
     }
     ReactNativeFlipper.initializeFlipper(this, reactNativeHost.reactInstanceManager)
+    registerActivityLifecycleCallbacks(OrientationActivityLifecycle.getInstance()); 
   }
 }
